@@ -70,8 +70,8 @@ else {
         
         
           <label class="w-radio">
-          <input type="radio" data-name="Radio" id="radio-2" name="radio" value="Radio 2" class="w-form-formradioinput radio-button-2 w-radio-input"><span class="radio-button-label-2 w-form-label">Page Visible</span></label><label class="w-radio">
-          <input type="radio" data-name="Radio" id="radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input"><span class="radio-button-label w-form-label">Page Invisible</span></label>
+          <input onclick="visible()" type="radio" data-name="Radio" id="radio-2" name="radio" value="Radio 2" class="w-form-formradioinput radio-button-2 w-radio-input"><span class="radio-button-label-2 w-form-label">Page Visible</span></label><label class="w-radio">
+          <input onclick="invisible()" type="radio" data-name="Radio" id="radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input"><span class="radio-button-label w-form-label">Page Invisible</span></label>
 
 
         </form>

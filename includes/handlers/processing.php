@@ -5,28 +5,12 @@
         $contactEmailInfo = $_POST['contactEmail'];
         $textField = $_POST['contactField'];
 
-        $to = "dannygrass@gmail.com";
+        //PHP will not send an email to a gmail address
+        $mailTo = "daniel@danielgrass.com";
+        $headers = "From: " . $contactEmailInfo;
+        $txt = "You have received an e-mail from " . $contactNameInfo . " .\n\n" . $textField;
 
-        $mailHeaders = "From: " . $contactNameInfo . "<" . $contactEmailInfo . ">\r\n";
-        if(mail($to, $mailHeaders)) {
-            echo "Message Successfully Sent!";
-        }
-
-
-
-
-
-
-        // 'X-Mailer: PHP/' . phpversion();
-        // @mail($to, $userName, $email, $textField);
-        // header("Location: contact-us.php?success");
-        // echo "Message Successfully Sent!";
-        
-
-        // if(isset($_GET['success']))
-        // {
-        //     echo "Your message has been sent.";
-        // }
+        mail();
     }
 
 

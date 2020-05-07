@@ -52,16 +52,16 @@ else {
     <div class="text-block-9"><strong>BeMo Academic Consulting Inc. <br>”</strong><br><strong>Toll Free</strong>: 1-855-900-BeMo (2366)<br>”<br><strong>Email</strong>: info@bemoacademicconsulting.com</div>
     <div class="form-block-3 w-form">
 
-    <form id="email-form" name="email-form" data-name="Email Form" class="form-3" action="contact-us.php" method="POST">
+    <form id="email-form" name="email-form" data-name="Email Form" class="form-3" action="processing.php" method="POST">
         
       <label for="name" class="field-label-2">Name</label>
-      <input type="text" class="text-field-4 w-input" maxlength="256" name="contactName" data-name="Name" placeholder="Enter your name" id="name">
+      <input type="text" class="text-field-4 w-input" maxlength="256" name="contactName" data-name="Name" placeholder="Enter your name" id="contactName">
       
       <label for="email" class="field-label">Email Address</label>
-      <input type="email" class="text-field-5 w-input" maxlength="256" name="contactEmail" data-name="Email" placeholder="Enter your email address" id="email" required="">
+      <input type="email" class="text-field-5 w-input" maxlength="256" name="contactEmail" data-name="Email" placeholder="Enter your email address" id="contactEmail" required="">
       
       <label for="Textbox" class="field-label">How Can We Help You?</label>
-      <textarea placeholder="Enter your message" maxlength="5000" id="field" name="contactField" class="textarea w-input"></textarea>
+      <textarea placeholder="Enter your message" maxlength="5000" id="contactField" name="contactField" class="textarea w-input"></textarea>
       
       <input type="submit" value="Rest" data-wait="Please wait..." class="submit-button-4 w-button">
       <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-3 w-button" name="button-send">
