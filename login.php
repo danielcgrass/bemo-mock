@@ -1,3 +1,14 @@
+<?php
+  include("includes/config.php");
+  include("includes/classes/Account.php");
+  include("includes/classes/Constants.php");
+
+  $account = new Account($con);
+
+  include("includes/handlers/login-handler.php");
+  echo $userLoggedIn;
+
+?>
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Wed May 06 2020 23:26:59 GMT+0000 (Coordinated Universal Time)  -->
@@ -47,46 +58,20 @@
       </div>
     </div>
     <div class="container w-container">
+
       <div class="w-form">
-        <form
-          id="email-form"
-          name="email-form"
-          data-name="Email Form"
-          class="form"
-        >
-          <label for="Username">Username</label
-          ><input
-            type="text"
-            class="text-field-2 w-input"
-            maxlength="256"
-            name="Username"
-            data-name="Username"
-            placeholder=""
-            id="Username"
-            required=""
-          /><label for="Password">Password</label
-          ><input
-            type="password"
-            class="text-field-3 w-input"
-            maxlength="256"
-            name="Password"
-            data-name="Password"
-            placeholder=""
-            id="Password"
-            required=""
-          /><input
-            type="submit"
-            value="Submit"
-            data-wait="Please wait..."
-            class="submit-button w-button"
-          />
+
+        <form id="email-form" name="email-form" data-name="Email Form" class="form" action="login.php" method="POST">
+
+          <label for="Username">Username</label>
+          <input type="text" class="text-field-2 w-input" maxlength="256" name="loginUsername" data-name="loginUsername" placeholder="Username..." id="loginUsername"/>
+
+          <label for="Password">Password</label>
+          <input type="password" class="text-field-3 w-input" maxlength="256" name="loginPassword" data-name="loginPassword" placeholder="Password..." id="loginPassword"/>
+
+          <input type="submit" value="Submit" name="submitMe" data-wait="Please wait..." class="submit-button w-button" id="loginButton"/>
+          <?php echo $account->getError(Constants::$loginFailed); ?>
         </form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
       </div>
     </div>
     <div class="section-2">

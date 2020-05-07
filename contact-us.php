@@ -20,14 +20,14 @@
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
     <div class="w-container"><a href="#" class="w-nav-brand"><img src="images/bemo-logo2.png" width="170" height="100" srcset="images/bemo-logo2-p-500.png 500w, images/bemo-logo2-p-800.png 800w, images/bemo-logo2-p-1080.png 1080w, images/bemo-logo2.png 1398w" sizes="(max-width: 479px) 120px, 170px" alt="" class="image"></a>
-      <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" class="nav-link w-nav-link">Main</a><a href="contact-us.html" aria-current="page" class="nav-link-2 w-nav-link w--current">Contact Us</a></nav>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.php" class="nav-link w-nav-link">Main</a><a href="contact-us.php" aria-current="page" class="nav-link-2 w-nav-link w--current">Contact Us</a></nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
     </div>
   </div><img src="images/contact-us.png" srcset="images/contact-us-p-500.png 500w, images/contact-us-p-800.png 800w, images/contact-us-p-1080.png 1080w, images/contact-us.png 1200w" sizes="100vw" alt="" class="image-2">
   <div class="div-block">
-    <div class="text-block-9"><strong>BeMo Academic Consulting Inc. <br>‍</strong><br><strong>Toll Free</strong>: 1-855-900-BeMo (2366)<br>‍<br><strong>Email</strong>: info@bemoacademicconsulting.com</div>
+    <div class="text-block-9"><strong>BeMo Academic Consulting Inc. <br>”</strong><br><strong>Toll Free</strong>: 1-855-900-BeMo (2366)<br>”<br><strong>Email</strong>: info@bemoacademicconsulting.com</div>
     <div class="form-block-3 w-form">
       <form id="email-form" name="email-form" data-name="Email Form" class="form-3"><label for="name" class="field-label-2">Name</label><input type="text" class="text-field-4 w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name" id="name"><label for="email" class="field-label">Email Address</label><input type="email" class="text-field-5 w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" id="email" required=""><label for="Textbox" class="field-label">How Can We Help You?</label><textarea placeholder="Enter your message" maxlength="5000" id="field" name="field" class="textarea w-input"></textarea><input type="submit" value="Rest" data-wait="Please wait..." class="submit-button-4 w-button"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-3 w-button"></form>
       <div class="w-form-done">
